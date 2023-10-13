@@ -35,7 +35,7 @@
 
   function addOutput(message) {
     if (message.trim() !== '') { // Check if the message is not empty or only whitespace
-        outputcontent.innerHTML += `<div class='bot'>${message}</div>`;
+        outputcontent.innerHTML += `<div class='bot'>Open-Interpreter: ${message}</div>`;
         // scroll to the bottom of the container
         const lastElement = outputcontent.lastElementChild;
         if (lastElement) {
@@ -46,7 +46,7 @@
 
   function  addInput(message) {
     if (message.trim() !== '') { // Check if the message is not empty or only whitespace
-        outputcontent.innerHTML += `<div class='user'>${message}</div>`;
+        outputcontent.innerHTML += `<div class='user'>Your Prompt: ${message}</div>`;
         // scroll to the bottom of the container
         const lastElement = outputcontent.lastElementChild;
         if (lastElement) {

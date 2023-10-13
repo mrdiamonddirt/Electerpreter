@@ -1,4 +1,4 @@
-# open-execute
+# Electerpreter
 
 A minimal Electron application to run and display the output of open-interpreter
 this is a work in progress and was intended to be my entry for the lablab.ai open-interpreter 24hour hackathon
