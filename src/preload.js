@@ -64,7 +64,7 @@ function createOpenInterpreterProcess() {
           if (event.data.includes('Would you like to run this code? (y/n)')) {
             console.log('we have some code to run')
             // just run it *test*
-            createProcess.stdio[1].write('y')
+            // createProcess.stdio[1].write('y')
           }
           // send message to renderer
           // window.postMessage('bot-stdout' + event.data, '*')

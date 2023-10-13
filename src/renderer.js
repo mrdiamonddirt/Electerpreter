@@ -20,14 +20,14 @@
 
     submitbutton.addEventListener('click', () => {
     // send input to python
-    userinput = input.value
     // at the begining of the message add 'user-input' so we can tell the difference between user input and other output
-    window.postMessage('user-input ' + userinput, '*')
+    window.postMessage('user-input ' + input.value, '*')
     // window.postMessage('command', '*')
     // clear input
+    addInput(input.value)
     input.value = ''
     // add output
-    addInput(input)
+    
   })
   })
 
@@ -48,6 +48,10 @@
       // remove 'bot-stdout' from the beginning of the message
       const message = event.data.replace('bot-stdout', '')
       // add output
+      if (message === '') {
+        console.log('empty string')
+        return
+      }
       addOutput(message)
     }
     if (event.data !== 'ready') {
