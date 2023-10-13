@@ -3,6 +3,8 @@
 A minimal Electron application to run and display the output of open-interpreter
 this is a work in progress and was intended to be my entry for the lablab.ai open-interpreter 24hour hackathon
 
+link to entry here: https://lablab.ai/event/open-interpreter-hackathon/big-full-stack-gamers/electerpreter-open-interpreter-electron-app
+
 ## Features
 
 - Runs open-interpreter within an electron app
