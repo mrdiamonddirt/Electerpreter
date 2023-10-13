@@ -75,8 +75,27 @@ body {
 }
 
 #prompt-container {
+  display: flex;
   position: absolute;
   bottom: 20px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+#prompt-input {
+  /* modern style input box */
+  height: 30px;
+  width: 80vw;
+}
+
+#prompt-submit {
+  width: 50px;
+  height: 30px;
+  border-radius: 2px;
+  background-color: green;
+  color: black;
 }
 
 * {

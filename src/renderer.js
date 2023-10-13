@@ -26,9 +26,7 @@
     // clear input
     addInput(input.value)
     input.value = ''
-    // add output
-    
-  })
+    })
   })
 
   
@@ -38,12 +36,22 @@
   function addOutput(message) {
     if (message.trim() !== '') { // Check if the message is not empty or only whitespace
         outputcontent.innerHTML += `<div class='bot'>${message}</div>`;
+        // scroll to the bottom of the container
+        const lastElement = outputcontent.lastElementChild;
+        if (lastElement) {
+          lastElement.scrollIntoView({ behavior: 'smooth', block: 'end' });
+        }
     }
   }
 
   function  addInput(message) {
     if (message.trim() !== '') { // Check if the message is not empty or only whitespace
         outputcontent.innerHTML += `<div class='user'>${message}</div>`;
+        // scroll to the bottom of the container
+        const lastElement = outputcontent.lastElementChild;
+        if (lastElement) {
+          lastElement.scrollIntoView({ behavior: 'smooth', block: 'end' });
+        }
     }
   }
 
