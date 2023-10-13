@@ -8,6 +8,7 @@ this is a work in progress and was intended to be my entry for the lablab.ai ope
 - Runs open-interpreter within an electron app
 - Displays the output of open-interpreter
 - Allows for the user to send an input to open-interpreter
+- Uses Open-Interpreter to automatically execute code that the llm comes up with
 
 ## TODO
 
@@ -55,7 +56,7 @@ $ npm run build:linux
 if you want to use this application it is currently setup to run the open-interpreter cli with the specific aruements i use for testing which are
 
 ```bash
-$ open-interpreter --model azure/gpt-35-turbo --context_window 2042
+$ open-interpreter --context_window 2042 -y
 ```
 
-this can be changed on line 13 of the preload.js file
+this can be changed on line 13 of the preload.js file, you will need to set your environment variable OPENAI_API_KEY
