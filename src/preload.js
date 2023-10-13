@@ -10,7 +10,7 @@ const { decode } = require('node:punycode');
 process.env.PYTHONIOENCODING = 'UTF-8';
 
 function createOpenInterpreterProcess() {
-  const createProcess = spawn('interpreter', ['--model', 'azure/gpt-35-turbo', '--context_window', '2042'],{
+  const createProcess = spawn('interpreter', ['--context_window', '2042', '-y'],{
     shell: true,
     stdio: ['pipe', 'pipe', 'pipe'],
     env: process.env,

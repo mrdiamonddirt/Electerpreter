@@ -1,9 +1,9 @@
 {
   "name": "open-execute",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "A electron app to open and execute open-interpreter queries",
   "main": "./src/main.js",
-  "author": "example.com",
+  "author": "Rowan wood",
   "homepage": "https://www.electronjs.org",
   "scripts": {
     "format": "prettier --write .",

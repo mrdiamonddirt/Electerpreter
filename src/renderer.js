@@ -36,11 +36,15 @@
   var output
 
   function addOutput(message) {
-    outputcontent.innerHTML += `<div class='bot'>${message}</div>`
+    if (message.trim() !== '') { // Check if the message is not empty or only whitespace
+        outputcontent.innerHTML += `<div class='bot'>${message}</div>`;
+    }
   }
 
   function  addInput(message) {
-    outputcontent.innerHTML += `<div class='user'>${message}</div>`
+    if (message.trim() !== '') { // Check if the message is not empty or only whitespace
+        outputcontent.innerHTML += `<div class='user'>${message}</div>`;
+    }
   }
 
   window.addEventListener('message', (event) => {
@@ -48,10 +52,7 @@
       // remove 'bot-stdout' from the beginning of the message
       const message = event.data.replace('bot-stdout', '')
       // add output
-      if (message === '') {
-        console.log('empty string')
-        return
-      }
+      console.log("message", message)
       addOutput(message)
     }
     if (event.data !== 'ready') {
