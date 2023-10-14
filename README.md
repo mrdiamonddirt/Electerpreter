@@ -5,6 +5,8 @@ this is a work in progress and was intended to be my entry for the lablab.ai ope
 
 link to entry here: https://lablab.ai/event/open-interpreter-hackathon/big-full-stack-gamers/electerpreter-open-interpreter-electron-app
 
+![CoverArt](/screenshots/cover_art.png)
+
 ## Features
 
 - Runs open-interpreter within an electron app
